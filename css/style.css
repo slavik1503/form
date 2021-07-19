@@ -421,6 +421,15 @@ table.location td.selected{
 .adr{
     padding: 0 10px 10px 0;
 }
+.div-end input.checkbox+label{
+    padding-left: 28px;
+}
+.div-end input.checkbox+label::before{
+    left: 2px;
+}
+.div-end input.checkbox:checked+label::before{
+    left: 2px;
+}
 .div-end input.checkbox:checked+label::after{
     left: 6px;
 }
