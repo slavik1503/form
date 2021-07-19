@@ -477,7 +477,7 @@ table.location td.selected{
 .form-last{ 
     position: fixed; 
     display: inline-block; 
-    top: 26.3%; 
+    top: 21.6%; 
     right: 11%; 
     z-index: 1; 
     width: 22px; 
@@ -493,7 +493,7 @@ table.location td.selected{
 .cross+label{ 
     position: fixed; 
     display: inline-block; 
-    top: 24%; 
+    top: 20%; 
     right: 11%; 
     font-size: 40px; 
     transform: rotate(45deg); 
