@@ -77,12 +77,9 @@ input,
 input:focus,
 textarea:focus,
 select:focus{
-    filter: drop-shadow(0 0 2.5px rgba(62,106,255,0.55));
+    box-shadow: 0 0 2.5px rgba(62,106,255,0.55);
     background-color: #fff;
     border: 1px solid #3e6aff;
-}
-select:focus{
-    filter: drop-shadow(none);
 }
 input.submit{
     color: #fff;
@@ -93,7 +90,7 @@ input.submit{
 }
 input.submit:focus,
 input.submit:hover{
-    filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
+    box-shadow: 0px 2px 2.5px rgba(8,118,52,0.35);
     background-color: #07be51;
 }
 .select option{
