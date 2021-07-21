@@ -529,7 +529,7 @@ table.location td.selected{
 .cross+label{ 
     position: fixed; 
     display: inline-block; 
-    top: 178px; 
+    top: 177px; 
     right: 11%; 
     font-size: 40px; 
     transform: rotate(45deg); 
