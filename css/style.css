@@ -516,11 +516,12 @@ table.location td.selected{
     width: 22px; 
     height: 23px; 
     background-color: #dadada; 
-} 
+}
 .cross{ 
     display: none; 
 } 
-.cross+label:hover{ 
+.cross+label:hover{
+    color: blue; 
     cursor: pointer; 
 } 
 .cross+label{ 
