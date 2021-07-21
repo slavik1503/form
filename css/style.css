@@ -8,7 +8,7 @@
 }
 body{
     margin: 0;
-    font-family:"Arial";
+    font-family:"Roboto";
 }
 .wrapper{
     margin: 0 auto;
@@ -20,8 +20,9 @@ body{
     clear: both;
 }
 h1{
+    padding-top: 50px;
     color: #1f222c;
-    font: 700 30px "Roboto Slab";
+    font: 700 30px "Roboto";
     text-align: center;
 }
 h2{
@@ -80,6 +81,9 @@ select:focus{
     background-color: #fff;
     border: 1px solid #3e6aff;
 }
+select:focus{
+    filter: drop-shadow(none);
+}
 input.submit{
     color: #fff;
     font: 700 14px "Roboto";
@@ -129,13 +133,16 @@ textarea::-webkit-input-placeholder{
     font: 400 14px "Roboto";
 }
 .form-element{
-    display: flex;
+    height: 150px;
 }
 .info label{
     padding-right: 40px;
 }
 td.disabled{
     color: #b3b3b3;
+}
+.radio-check{
+    display: inline-block;
 }
 .radio,
 .checkbox,
@@ -201,29 +208,39 @@ td.disabled{
     border: 1px solid #3e6aff;
 }
 .div-date{
-    max-width: 480px;
-    margin: 0 0 50px 50px;
+    float: right;
+    max-width: 600px;
     border-radius: 3px;
     background-color: #f7f7f7;
     border: 1px solid #e5e5e5;
 }
-.name,
-.inputs{
-    display: inline-block;
+.name{
+    padding: 13px 20px;
+    background-color: #f7f7f7;
 }
-.name p{
-    padding: 0 7px 0 7px;
-    display: inline-block;
+.name table{
+    width: 100%;
+}
+.name td{
+    padding: 7px 0;
+}
+.name td:first-child{
+    width: 80px;
     color: #b3b3b3;
     font: 700 14px "Roboto";
 }
-.name label{
-    padding-left: 58px;
-    color: #1f222c;
-    font: 400 14px "Roboto";
+.flex{
+    display: flex;
+    justify-content: space-between;
 }
-.name p.date{
-    padding-right: 50px;
+.date{
+    display: inline-block;
+}
+.date input{
+    padding: 10px 20px;
+}
+.input-date{
+    margin-left: 31px;
 }
 .form-style{
     display: flex;
@@ -379,6 +396,10 @@ ul{
     border-radius: 3px;
     background-color: #3e6aff;
 }
+.file+label:hover{
+    filter: drop-shadow(0px 2px 2.5px rgba(15,40,126,0.35));
+    background-color: #2857f4;
+}
 .div-end{
     max-width: 680px;
 }
@@ -473,7 +494,7 @@ table.location td.selected{
 .fixed-form{ 
     position: fixed; 
     display: inline-block; 
-    top: 11%; 
+    top: 15%; 
     right: 10%; 
     transition: all 0.5s ease; 
 } 
@@ -492,7 +513,7 @@ table.location td.selected{
 .form-last{ 
     position: fixed; 
     display: inline-block; 
-    top: 21.6%; 
+    top: 190px; 
     right: 11%; 
     z-index: 1; 
     width: 22px; 
@@ -508,7 +529,7 @@ table.location td.selected{
 .cross+label{ 
     position: fixed; 
     display: inline-block; 
-    top: 20%; 
+    top: 178px; 
     right: 11%; 
     font-size: 40px; 
     transform: rotate(45deg); 

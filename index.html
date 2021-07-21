@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Форми для заповнення</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -68,18 +71,32 @@
                     </table>
                 </form>
             </div>
-            <div class="div-date">
+            <div class="div-date clear">
                 <div class="name">
                     <form action="">
-                        <p>Статус</p>
-                        <input class="checkbox" type="checkbox" id="nov">
-                        <label for="nov">Новинки</label>
-                        <input class="checkbox" type="checkbox" id="prom">
-                        <label for="prom">Акційні товари</label>
-                        <input class="checkbox" type="checkbox" id="sale">
-                        <label for="sale">Розпродаж</label>
-                        <p class="date">Дата</p>
-                        <input type="date">
+                        <table>
+                            <tr>
+                                <td>Статус</td>
+                                <td class="flex">
+                                    <span>
+                                        <input class="checkbox" type="checkbox" id="nov">
+                                        <label for="nov">Новинки</label>
+                                    </span>
+                                    <span>
+                                        <input class="checkbox" type="checkbox" id="prom">
+                                        <label for="prom">Акційні товари</label>
+                                    </span>
+                                    <span>
+                                        <input class="checkbox" type="checkbox" id="sale">
+                                        <label for="sale">Розпродаж</label>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Дата</td>
+                                <td><label class="date" for=""><input class="input-date" type="date"></label></td>
+                            </tr>
+                        </table>
                     </form>
                 </div>
             </div>
